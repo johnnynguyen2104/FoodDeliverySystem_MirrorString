@@ -1,0 +1,16 @@
+/packages
+/FoodDelivery.API/obj
+/FoodDelivery.API/bin
+/FoodDelivery.Business/obj
+/FoodDelivery.Business/bin
+/FoodDelivery.DAL/obj
+/FoodDelivery.DAL/bin
+/FoodDelivery.Extensions/obj
+/FoodDelivery.Extensions/bin
+/FoodDelivery.Security/obj
+/FoodDelivery.Security/bin
+/MirrorString/obj
+/MirrorString/bin
+/Assignments_Test/obj
+/Assignments_Test/bin
+/AscendAssignments.v3.ncrunchsolution.user

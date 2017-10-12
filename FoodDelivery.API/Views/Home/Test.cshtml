@@ -1,0 +1,27 @@
+﻿
+@{
+    ViewBag.Title = "Test";
+}
+@Scripts.Render("~/bundles/jquery")
+<script src="~/Scripts/jquery.signalR-2.2.2.min.js"></script>
+<script src="/signalr/hubs"></script>
+<script>
+    var notificationHubProxy = null;
+    function Init() {
+        $.connection.hub.logging = true;
+        notificationHubProxy = $.connection.notificationHub;
+
+        notificationHubProxy.client.hello = function () {
+            console.log("Hello from ASP.NET Web API");
+        };
+
+        $.connection.hub.start().done(function () {
+            console.log("started");
+        }).fail(function (result) {
+            console.log(result);
+        });
+    };
+
+    Init();
+</script>
+
